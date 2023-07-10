@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(148, 157, 69);
+}
+
+h1 {
+  display: none;
+}
+
+body {
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+}
+header nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem;
+  margin: 1.25rem 0.8rem;
+}
+
+.logo-btn {
+  margin: 0.3rem;
+}
+
+.logo {
+  width: 15vw;
+  height: auto;
+  max-width: 170px;
+}
+
+header nav ul {
+  float: none;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0.5rem;
+}
+
+header nav ul li a {
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  padding: 0.1rem;
+  margin: 0;
+}
+
+.bag-shopping {
+  size: 3vw;
+  margin-right: 1.5rem;
+}
+
+.check-btn {
+  font-size: 2.5vw;
+  float: left;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  header nav {
+    width: 100%;
+    height: 3.5rem;
+    margin: 1rem 0.5rem;
+    padding: 0.1rem;
+  }
+  .check-btn {
+    display: block;
+  }
+  .logo {
+    width: 30vw;
+    height: auto;
+    max-width: 120px;
+  }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+  }
+  header nav ul li {
+    display: block;
+    margin: 0.01vw 0;
+  }
+  header nav ul li a {
+    font-size: 3vw;
+    line-height: 0.2vw;
+  }
+  li a:hover,
+  li a.active {
+    background: none;
+    color: rgb(148, 157, 69);
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+  .logo-btn,
+  .check-btn {
+    order: 2;
+    margin: 0 5px;
+  }
+  .bag-shopping {
+    size: 1rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  header nav {
+    width: 100%;
+    height: 3.5rem;
+    margin: 2.5rem 1rem;
+    padding: 0.1rem;
+  }
+  .check-btn {
+    display: block;
+  }
+  .logo {
+    width: 32vw;
+    height: auto;
+    max-width: 130px;
+  }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+  }
+  header nav ul li {
+    display: block;
+    margin: 0.01vw 0;
+  }
+  header nav ul li a {
+    font-size: 3vw;
+    line-height: 0.2vw;
+  }
+  li a:hover,
+  li a.active {
+    background: none;
+    color: rgb(148, 157, 69);
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+  .logo-btn,
+  .check-btn {
+    order: 2;
+    margin: 0 5px;
+  }
+  .bag-shopping {
+    size: 1rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem;
+    margin: 1.25rem 0.8rem;
+  }
+  .logo-btn {
+    margin: 0.3rem;
+  }
+  .logo {
+    width: 15vw;
+    height: auto;
+  }
+  header nav ul {
+    float: none;
+    margin-right: 20px;
+  }
+  header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5rem;
+  }
+  header nav ul li a {
+    font-family: "Averia Serif Libre", cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    padding: 0.1rem;
+    margin: 0px;
+  }
+  .bag-shopping {
+    size: 2.7vw;
+    margin-right: 1.5rem;
+  }
+  .check-btn {
+    font-size: 2.5vw;
+    float: left;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contacto {
+  padding: 0.5rem;
+  max-width: 20rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  color: black;
+  padding: 0.3rem;
+}
+.footer__legales {
+  padding: 0.5rem;
+  max-width: 20rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8vw;
+  color: black;
+  padding: 0.1rem;
+  margin: 0.05rem 0.05rem;
+}
+
+.instagram {
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 0.3rem;
+  max-height: 35px;
+  margin-bottom: 15px;
+}
+.instagram__usuario {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 4vw;
+  color: rgb(148, 157, 69);
+  margin: 1px;
+  padding: 0px;
+  display: inline-block;
+}
+.instagram__logo {
+  width: 5vw;
+  margin: 0.05rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 0.05rem;
+}
+.newsletter__input {
+  border-color: rgb(148, 157, 69);
+  border-radius: 1rem;
+  border-width: 0.01rem;
+}
+
+.footer-nav {
+  text-align: center;
+  list-style: none;
+  padding: 0.5rem;
+  margin: 0px;
+  line-height: 3.5vw;
+}
+.footer-nav__enlace {
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  max-height: 15px;
+  color: black;
+}
+
+.logos-pago {
+  padding: 0.125rem;
+}
+.logos-pago__paypal {
+  width: 8vw;
+  margin: 0.125rem;
+}
+.logos-pago__mercadopago {
+  width: 8vw;
+  margin: 0.125rem;
+}
+.logos-pago__rapipago {
+  width: 9vw;
+  margin: 0.125rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .footer {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 25% 45% 15%;
+    grid-template-areas: "inst-link inst-link inst-link" "news news news" "nav pago contacto" "legales legales legales";
+  }
+  .footer__contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .footer__legales {
+    font-size: 0.6rem;
+    grid-area: legales;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .instagram {
+    grid-area: inst-link;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .instagram__usuario {
+    font-size: 1.4rem;
+    margin: 0.2vw;
+  }
+  .instagram__logo {
+    width: 3vw;
+    margin: 0.1vw;
+  }
+  .newsletter {
+    grid-area: news;
+  }
+  .newsletter__label {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .footer-nav {
+    line-height: 1.25rem;
+    margin: 0.1rem 0.1rem;
+    grid-area: nav;
+  }
+  .footer-nav__enlace {
+    font-size: 1rem;
+  }
+  .logos-pago {
+    padding: 1rem;
+    grid-area: pago;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logos-pago__paypal {
+    width: 5vw;
+    margin: 0.2rem;
+  }
+  .logos-pago__mercadopago {
+    width: 5vw;
+    margin: 0.2rem;
+  }
+  .logos-pago__rapipago {
+    width: 6vw;
+    margin: 0.2rem;
+  }
+}
+.btn-aceptar-footer {
+  border: 0.01rem solid rgb(148, 157, 69);
+  background-color: rgba(148, 157, 69, 0.6);
+  color: white;
+  padding: 0.2rem 0.2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  border-radius: 1rem;
+  margin: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-aceptar-footer {
+    padding: 0.4rem;
+    font-size: 0.6rem;
+    max-width: 50px;
+    max-height: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+
+// Boton aceptar footer 
+// MOBILE------
+.btn-aceptar-footer {
+    border: 0.01rem solid $color-principal;
+    background-color: rgba(148, 157, 69, 0.6);
+    color: white;
+    padding: 0.2rem 0.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    border-radius: 1rem;
+    margin: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-aceptar-footer {
+        padding: 0.4rem;
+        font-size: 0.6rem;
+        max-width: 50px;
+        max-height: 25px;
+    }
+}

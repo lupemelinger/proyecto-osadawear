@@ -8,7 +8,7 @@
     <title>Osada Wear</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet"
@@ -51,41 +51,44 @@
     </header>
 
     <main>
-        <div id="carouselExample" class="carousel slide" class="carousel-index">
-            <div class="carousel-inner" >
-                <div class="carousel-item active">
-                    <img src="./img/inicio/carrusel-inicio/buzo-anorak.jpg" class="d-block w-100" alt="..." class="img-carousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inicio/carrusel-inicio/buzo-flow.jpg" class="d-block w-100"  alt="..." class="img-carousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inicio/carrusel-inicio/campera-flowers.jpg" class="d-block w-100" alt="..." class="img-carousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inicio/carrusel-inicio/mangas-black.jpg" class="d-block w-100"  alt="..." class="img-carousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inicio/carrusel-inicio/polera-crema.jpg" class="d-block w-100" alt="..." class="img-carousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inicio/carrusel-inicio/reme-patch.jpg" class="d-block w-100" alt="..." class="img-carousel">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/inicio/carrusel-inicio/top-patch.jpg" class="d-block w-100" alt="..." class="img-carousel">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </nav>
+        <div class="carousel-item active">
+            <img src="./img/inicio/carrusel-inicio/buzo-anorak.jpg" class="d-block w-100" alt="..."
+                class="img-carousel">
         </div>
+        <div class="carousel-item">
+            <img src="./img/inicio/carrusel-inicio/buzo-flow.jpg" class="d-block w-100" alt="..." class="img-carousel">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/inicio/carrusel-inicio/campera-flowers.jpg" class="d-block w-100" alt="..."
+                class="img-carousel">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/inicio/carrusel-inicio/mangas-black.jpg" class="d-block w-100" alt="..."
+                class="img-carousel">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/inicio/carrusel-inicio/polera-crema.jpg" class="d-block w-100" alt="..."
+                class="img-carousel">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/inicio/carrusel-inicio/reme-patch.jpg" class="d-block w-100" alt="..." class="img-carousel">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/inicio/carrusel-inicio/top-patch.jpg" class="d-block w-100" alt="..." class="img-carousel">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div> -->
 
-
+        <!-- 
         <section class="article-index">
             <img src="img/inicio/reme-manzana.jpg.jpg" alt="Remera manzana" class="img-article-index">
             <article>
@@ -132,41 +135,42 @@
                     ¡Inscribite y recibí todas las novedades, promociones y descuentos!!
                 </p>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
     <hr>
 
-    <footer>
+    <footer class="footer">
 
-        <div class="link-instagram">
+        <div class="instagram">
             <a href="https://www.instagram.com/osada.wear/">
-                <img class=logo-instagram src="img/inicio/footer/insta.png" alt="logo-instagram">
-                <p class="usuario-instagram">osada.wear</p>
+                <img class=instagram__logo src="img/inicio/footer/insta.png" alt="logo-instagram">
+                <p class="instagram__usuario">osada.wear</p>
             </a>
         </div>
 
         <div class="newsletter">
-            <form action="" class="form-newsletter">
-                <label for="email-newsletter">Sumate a los beneficios de ser parte de Osada!</label>
-                <input type="email" id="email-newsletter"></input>
+            <form action="" class="newsletter__form">
+                <label for="email-newsletter" class="newsletter__label">Sumate a los beneficios de ser parte de
+                    Osada!</label>
+                <input type="email" id="email-newsletter" class="newsletter__input"></input>
             </form>
             <a class="btn-aceptar-footer" href="">Aceptar</a>
         </div>
 
         <nav>
             <ul class="footer-nav">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/stock.html">Stock</a></li>
-                <li><a href="./pages/osada-a-medida.html">Osada a Medida</a></li>
-                <li><a href="./pages/lenceria.html">Lencería</a></li>
-                <li><a href="./pages/djs-by-osada.html">DJ's by Osada</a></li>
-                <li><a href="./pages/desfiles.html">Desfiles</a></li>
+                <li><a href="./index.html" class="footer-nav__enlace">Inicio</a></li>
+                <li><a href="./pages/stock.html" class="footer-nav__enlace">Stock</a></li>
+                <li><a href="./pages/osada-a-medida.html" class="footer-nav__enlace">Osada a Medida</a></li>
+                <li><a href="./pages/lenceria.html" class="footer-nav__enlace">Lencería</a></li>
+                <li><a href="./pages/djs-by-osada.html" class="footer-nav__enlace">DJ's by Osada</a></li>
+                <li><a href="./pages/desfiles.html" class="footer-nav__enlace">Desfiles</a></li>
             </ul>
         </nav>
 
-        <div class="contacto-footer">
+        <div class="footer__contacto">
             <ul>
                 <li><i class="fa-brands fa-whatsapp" style="color: #949d45;"></i> +542915663469 </li>
                 <li><i class="fa-regular fa-envelope" style="color: #949d45;"></i> osada.wear@gmail.com </li>
@@ -175,12 +179,12 @@
         </div>
 
         <span class="logos-pago">
-            <img class="img-paypal" src="img/inicio/footer/206675_paypal_method_payment_icon.png" alt="">
-            <img class="img-mercadopago" src="img/inicio/footer/mercado pago.png" alt="">
-            <img class="img-rapipago" src="img/inicio/footer/rapipago.png" alt="">
+            <img class="logos-pago__paypal" src="img/inicio/footer/206675_paypal_method_payment_icon.png" alt="">
+            <img class="logos-pago__mercadopago" src="img/inicio/footer/mercado pago.png" alt="">
+            <img class="logos-pago__rapipago" src="img/inicio/footer/rapipago.png" alt="">
         </span>
 
-        <div class="legales-footer">
+        <div class="footer__legales">
             <p>© Copyright Osada Wear 2023</p>
             <p>Todos los derechos reservados</p>
         </div>

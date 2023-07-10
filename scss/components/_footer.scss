@@ -1,0 +1,213 @@
+// MOBILE ---------------------
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__contacto {
+        padding: 0.5rem;
+        max-width: 20rem;
+        font-family: $ff-roboto;
+        font-size: 3vw;
+        color: black;
+        padding: 0.3rem;
+    }
+
+    &__legales {
+        padding: 0.5rem;
+        max-width: 20rem;
+        font-family: $ff-roboto;
+        font-size: 1.8vw;
+        color: black;
+        padding: 0.1rem;
+        margin: 0.05rem 0.05rem;
+    }
+
+}
+
+.instagram {
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+    max-height: 35px;
+    margin-bottom: 15px;
+
+    &__usuario {
+        font-family: $ff-averia;
+        font-size: 4vw;
+        color: $color-principal;
+        margin: 1px;
+        padding: 0px;
+        display: inline-block;
+    }
+
+    &__logo {
+        width: 5vw;
+        margin: 0.05rem;
+    }
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.1rem;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-family: $ff-roboto;
+        font-size: 3vw;
+        margin-bottom: 0.05rem;
+    }
+
+    &__input {
+        border-color: $color-principal;
+        border-radius: 1rem;
+        border-width: 0.01rem;
+    }
+
+}
+
+.footer-nav {
+    text-align: center;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0px;
+    line-height: 3.5vw;
+    // max-height: 120px;
+
+    &__enlace {
+        font-family: $ff-roboto;
+        font-size: 3vw;
+        max-height: 15px;
+        color: black;
+    }
+}
+
+.logos-pago {
+    padding: 0.125rem;
+
+    &__paypal {
+        width: 8vw;
+        margin: 0.125rem;
+    }
+
+    &__mercadopago {
+        width: 8vw;
+        margin: 0.125rem;
+    }
+
+    &__rapipago {
+        width: 9vw;
+        margin: 0.125rem;
+    }
+}
+
+// TABLET-------
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .footer {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+}
+
+// DESKTOP Y TABLET XL--------
+
+@media screen and (min-width: 768px) {
+    .footer {
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15% 25% 45% 15%;
+        grid-template-areas: "inst-link inst-link inst-link" "news news news" "nav pago contacto" "legales legales legales";
+
+        &__contacto {
+            grid-area: contacto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        &__legales {
+            font-size: 0.6rem;
+            grid-area: legales;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .instagram {
+        grid-area: inst-link;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__usuario {
+            font-size: 1.4rem;
+            margin: 0.2vw;
+        }
+
+        &__logo {
+            width: 3vw;
+            margin: 0.1vw
+        }
+    }
+
+    .newsletter {
+        grid-area: news;
+
+        &__label {
+            font-size: 1rem;
+            margin: 0.5rem;
+        }
+    }
+
+    .footer-nav {
+        line-height: 1.25rem;
+        margin: 0.1rem 0.1rem;
+        grid-area: nav;
+
+        &__enlace {
+            font-size: 1rem;
+        }
+    }
+
+    .logos-pago {
+        padding: 1rem;
+        grid-area: pago;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__paypal {
+            width: 5vw;
+            margin: 0.2rem;
+        }
+
+        &__mercadopago {
+            width: 5vw;
+            margin: 0.2rem;
+        }
+
+        &__rapipago {
+            width: 6vw;
+            margin: 0.2rem;
+        }
+
+    }
+}
