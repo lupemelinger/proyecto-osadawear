@@ -1,0 +1,55 @@
+.stock {
+    margin: 30px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__item {
+        width: 40vw;
+        margin: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    &__img {
+        width: 100%
+    }
+
+    &__nombre {
+        font-family: $ff-averia;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .stock {
+        margin: 30px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+        &__item {
+            width: 27vw;
+            margin: 2vw;
+        }
+    
+        &__img {
+            max-width: 100%
+        
+        }
+    
+        &__nombre {
+            display: none;
+        }
+
+    }
+
+    .stock__btn:hover {
+        color:  rgba(148, 157, 69, 0.493);
+    }
+}
