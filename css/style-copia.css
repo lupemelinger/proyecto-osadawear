@@ -439,7 +439,7 @@ main form input {
     }
 
     /* instragram-link */
-    .link-instagram {
+    .instagram {
         flex-direction: row;
         align-content: center;
         padding: 0.3rem;
