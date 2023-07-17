@@ -1,6 +1,28 @@
-/* forms osada-a-medida y djs-by-osada */
 
+.bloque-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__info {
+        font-family: $ff-roboto;
+        font-size: 1rem;
+        color: black;
+        line-height: 20px;
+        text-align: center;
+        max-width: 70vw;
+        padding: 1rem;
+    }
+}
+
+// MOBILE ---------------
 .formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
     padding: 1rem;
     margin: 2rem;
 
@@ -15,6 +37,7 @@
         border-color: $color-principal;
         border-radius: 1rem;
         height: 4vw;
+        width: 100%;
         border-width: 0.1rem;
         margin: 0.4rem;
     }
@@ -23,11 +46,13 @@
 .attach-files {
     border-color: $color-principal;
     border: 1px;
-    color: $color-principal;
+    color: grey;
     font-size: 2.3vw;
     max-width: 50vw;
     padding: 1rem;
 }
+
+// TABLET ----------------
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
     .formulario {
@@ -37,10 +62,47 @@
             font-size: 2.5vw;
             padding: 0.5rem;
         }
+
+        &__input {
+            height: 3vw;
+        }
     }
 
     .attach-files {
         width: 60vw;
         padding: 1rem;
+    }
+}
+
+// TABLET XL ------------------------
+@media screen and (min-width: 768px) {
+    .formulario {
+        margin: 1rem 10rem;
+    
+        &__label {
+            font-size: 1.8vw;
+        }
+    
+        &__input {
+            height: 2.5vw;;
+        }
+    }
+    
+    .attach-files {
+        border: 1.2px;
+        font-size: 1vw;
+        padding: 1rem;
+    }
+}
+
+// DESKTOP --------------------
+@media screen and (min-width: 1025px) {
+    .formulario {
+        margin: 1rem 15rem;
+        
+        &__label {
+            font-size: 1vw;
+
+        }
     }
 }

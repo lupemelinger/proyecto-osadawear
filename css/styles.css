@@ -45,10 +45,11 @@ h2 {
   max-width: 100%;
   max-height: 30px;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 2.5vw;
+    font-size: 2.7vw;
   }
 }
 
@@ -56,7 +57,6 @@ h3 {
   font-family: "Averia Serif Libre", cursive;
   color: black;
   text-align: center;
-  text-transform: uppercase;
   padding: 0.1rem;
 }
 
@@ -119,7 +119,7 @@ header nav ul li a {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   header nav {
     width: 100%;
     height: 3.5rem;
@@ -169,107 +169,24 @@ header nav ul li a {
     margin-right: 1.5rem;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  header nav {
-    width: 100%;
-    height: 3.5rem;
-    margin: 2.5rem 1rem;
-    padding: 0.1rem;
+@media screen and (min-width: 768px) {
+  .div-logo {
+    order: 1;
   }
-  .check-btn {
-    display: block;
-  }
-  .logo {
-    width: 32vw;
-    height: auto;
-    max-width: 130px;
-  }
-  header nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    top: 80px;
-    right: -100%;
-    text-align: center;
-  }
-  header nav ul li {
-    display: block;
-    margin: 0.01vw 0;
-  }
-  header nav ul li a {
-    font-size: 3vw;
-    line-height: 0.2vw;
-  }
-  li a:hover,
-  li a.active {
-    background: none;
-    color: rgb(148, 157, 69);
-  }
-  #check:checked ~ ul {
-    right: 0;
-  }
-  .logo-btn,
-  .check-btn {
+  .div-nav-header {
     order: 2;
-    margin: 0 5px;
   }
-  .bag-shopping {
-    size: 1rem;
-    margin-right: 1.5rem;
+  .div-bagshopping {
+    order: 3;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  header nav {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.3rem;
-    margin: 1.25rem 0.8rem;
-  }
-  .logo-btn {
-    margin: 0.3rem;
-  }
-  .logo {
-    width: 15vw;
-    height: auto;
-  }
-  header nav ul {
-    float: none;
-    margin-right: 20px;
-  }
-  header nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0.5rem;
-  }
-  header nav ul li a {
-    font-family: "Averia Serif Libre", cursive;
-    font-weight: bold;
-    font-size: 1rem;
-    color: black;
-    text-decoration: none;
-    padding: 0.1rem;
-    margin: 0px;
-  }
-  .bag-shopping {
-    size: 2.7vw;
-    margin-right: 1.5rem;
-  }
-  .check-btn {
-    font-size: 2.5vw;
-    float: left;
-    line-height: 50px;
-    cursor: pointer;
-    display: none;
-  }
-  #check {
-    display: none;
-  }
+header li a:hover {
+  color: rgb(148, 157, 69);
+  font-size: 1.2rem;
+  transition-duration: 500ms;
+  transition-delay: 250ms;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -459,7 +376,6 @@ header nav ul li a {
   border-radius: 1rem;
   margin: 0.3rem;
 }
-
 @media screen and (min-width: 768px) {
   .btn-aceptar-footer {
     padding: 0.4rem;
@@ -468,6 +384,7 @@ header nav ul li a {
     max-height: 25px;
   }
 }
+
 .btn-forms {
   border: 0.1rem solid rgb(148, 157, 69);
   background-color: rgba(148, 157, 69, 0.6);
@@ -479,6 +396,21 @@ header nav ul li a {
   margin: 0.3rem;
   height: 5vw;
   width: 15vw;
+}
+@media screen and (min-width: 768px) {
+  .btn-forms {
+    padding: 0.1rem;
+    font-size: 1.7vw;
+    height: 3.5vw;
+    width: 10vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .btn-forms {
+    font-size: 1.3vw;
+    height: 3vw;
+    width: 8vw;
+  }
 }
 
 .stock {
@@ -525,8 +457,28 @@ header nav ul li a {
     color: rgba(148, 157, 69, 0.493);
   }
 }
-/* forms osada-a-medida y djs-by-osada */
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloque-texto__info {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+  line-height: 20px;
+  text-align: center;
+  max-width: 70vw;
+  padding: 1rem;
+}
+
 .formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 1rem;
   margin: 2rem;
 }
@@ -540,6 +492,7 @@ header nav ul li a {
   border-color: rgb(148, 157, 69);
   border-radius: 1rem;
   height: 4vw;
+  width: 100%;
   border-width: 0.1rem;
   margin: 0.4rem;
 }
@@ -547,7 +500,7 @@ header nav ul li a {
 .attach-files {
   border-color: rgb(148, 157, 69);
   border: 1px;
-  color: rgb(148, 157, 69);
+  color: grey;
   font-size: 2.3vw;
   max-width: 50vw;
   padding: 1rem;
@@ -561,15 +514,42 @@ header nav ul li a {
     font-size: 2.5vw;
     padding: 0.5rem;
   }
+  .formulario__input {
+    height: 3vw;
+  }
   .attach-files {
     width: 60vw;
     padding: 1rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .formulario {
+    margin: 1rem 10rem;
+  }
+  .formulario__label {
+    font-size: 1.8vw;
+  }
+  .formulario__input {
+    height: 2.5vw;
+  }
+  .attach-files {
+    border: 1.2px;
+    font-size: 1vw;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .formulario {
+    margin: 1rem 15rem;
+  }
+  .formulario__label {
+    font-size: 1vw;
+  }
+}
 .carousel-container {
   width: 100%;
-  background-color: rgb(148, 157, 69);
-  padding: 15vw;
+  background-color: rgba(148, 157, 69, 0.548);
+  padding: 10vw;
   margin: 10px 5px;
   position: relative;
 }
@@ -692,6 +672,20 @@ header nav ul li a {
     font-size: 0.9em;
     max-width: 15vw;
   }
+}
+.sect-desfiles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.sect-desfiles__titulo {
+  font-size: 3vw;
+  margin: 0.3rem;
+}
+.sect-desfiles__info {
+  font-size: 2vw;
+  margin: 0.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

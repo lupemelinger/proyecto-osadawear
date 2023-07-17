@@ -2,8 +2,8 @@
 
 .carousel-container {
     width: 100%;
-    background-color: $color-principal;
-    padding: 15vw;
+    background-color: rgba(148, 157, 69, 0.548);
+    padding: 10vw;
     margin: 10px 5px;
     position: relative;
 }
@@ -14,6 +14,7 @@
 }
 
 // ARTICULO INDEX
+// Mobile ----------
 .article-index {
     display: flex;
     flex-direction: column;
@@ -49,6 +50,8 @@
     }
 }
 
+// Tablet XL y desktop -------------
+
 @media screen and (min-width: 768px) {
     .article-index {
         display: flex;
@@ -81,6 +84,7 @@
 }
 
 // TARJETAS BENEFICIOS
+// Mobile ---------
 
 .sect-tarjetas {
     display: grid;
@@ -120,6 +124,8 @@
         list-style: none;
     }
 }
+
+// Tablet XL y Desktop ---------------
 
 @media screen and (min-width:768px) {
     .sect-tarjetas {

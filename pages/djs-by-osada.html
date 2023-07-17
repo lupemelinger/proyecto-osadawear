@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="span">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osada Wear - DJ's by Osada</title>
+    <title> Osada Wear | DJ's by Osada</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -15,17 +16,11 @@
     <link href=" https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" type="text/css/">
     <script src="https://kit.fontawesome.com/c4ac9449c7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-
-        <h1>Osada Wear</h1>
         <nav>
-            <div>
-                <a href="../index.html" class="logo-btn">
-                    <img src="../img/inicio/logo.png" alt="Osada Wear" class="logo">
-                </a>
-            </div>
-            <div>
+            <div class="div-nav-header">
                 <input type="checkbox" id="check">
                 <label for="check" class="check-btn">
                     <i class="fa-solid fa-bars" style="color: #949d45;"></i>
@@ -38,46 +33,54 @@
                     <li><a href="../pages/desfiles.html">Desfiles</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="div-logo">
+                <h1>Osada Wear</h1>
+                <a href="../index.html" class="logo-btn">
+                    <img src="../img/inicio/logo.png" alt="Osada Wear" class="logo">
+                </a>
+            </div>
+
+            <div class="div-bagshopping">
                 <a href="#" class="bag-shopping">
                     <i class="fa-solid fa-bag-shopping" style="color: #949d45;"></i>
                 </a>
             </div>
         </nav>
-
-
     </header>
 
+
     <main>
-<h2>DJ's by Osada</h2>
-<p>Vestuario para artistas que quieran lucir Osada's en la cabina</p>
+        <div class="bloque-texto">
+            <h2 class="bloque-texto__titulo">DJ's by Osada</h2>
+            <p class="bloque-texto__info">Vestuario para artistas que quieran lucir Osada's en la cabina</p>
+        </div>
 
-<form action="">
-    <div>
-        <label for="Nombre">Nombre</label>
-        <input type="text" id="Nombre">
-    </div>
+        <form action="" class="formulario">
+            <div>
+                <label for="nombre" class="text-forms" class="formulario__label">Nombre</label>
+                <input type="text" id="nombre" class="formulario__input">
+            </div>
 
-    <div>
-        <label for="Email">Email</label>
-        <input type="email" id="Email">
-    </div>
+            <div>
+                <label for="email" class="text-forms" class="formulario__label">Email</label>
+                <input type="email" id="email" class="formulario__input">
+            </div>
 
-    <div>
-        <label for="Celular">Celular</label>
-        <input type="number" id="Celular">
-    </div>
+            <div>
+                <label for="celular" class="text-forms" class="formulario__label">Celular</label>
+                <input type="number" id="celular" class="formulario__input">
+            </div>
 
-    <div>
-        <input type="submit" id="Enviar">
-    </div>
+            <div>
+                <input type="submit" id="Enviar" class="btn-forms">
+            </div>
 
-</form>
+        </form>
 
     </main>
 
     <hr>
-    
+
     <footer class="footer">
 
         <div class="instagram">
@@ -129,8 +132,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>

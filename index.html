@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="span">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creamos prendas exclusivas utilizando telas vintage, customizando prendas ya existentes y confeccionando a medida.">
     <title> Osada Wear | Prendas exclusivas </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -20,15 +21,8 @@
 <body>
 
     <header>
-
-        <h1>Osada Wear</h1>
-        <nav>
-            <div>
-                <a href="./index.html" class="logo-btn">
-                    <img src="img/inicio/LOGO.png" alt="Osada Wear" class="logo">
-                </a>
-            </div>
-            <div>
+        <nav>            
+            <div class="div-nav-header">
                 <input type="checkbox" id="check">
                 <label for="check" class="check-btn">
                     <i class="fa-solid fa-bars" style="color: #949d45;"></i>
@@ -41,26 +35,31 @@
                     <li><a href="./pages/desfiles.html">Desfiles</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="div-logo">
+                <h1>Osada Wear</h1>
+                <a href="./index.html" class="logo-btn">
+                    <img src="img/inicio/logo.png" alt="Osada Wear" class="logo">
+                </a>
+            </div>
+
+            <div class="div-bagshopping">
                 <a href="#" class="bag-shopping">
                     <i class="fa-solid fa-bag-shopping" style="color: #949d45;"></i>
                 </a>
             </div>
         </nav>
-
     </header>
 
     <section class="article-index">
         <img src="img/inicio/reme-manzana.jpg.jpg" alt="Remera manzana" class="article-index__img">
         <article class="article-index__texto">
             <h2 class="article-index__titulo">¿Qué es Osada?</h2>
-            <p class="article-index__info"> En osada creamos prendas exclusivas utilizando telas vintage, customizando
-                    prendas ya existentes y
-                    confeccionando a medida.
-                    Todas las prendas son únicas y si no están en stock podes pedirnos que la confeccionemos para vos.
-                </p>
-            </article>
-        </section>
+            <p class="article-index__info"> 
+                En osada creamos prendas exclusivas utilizando telas vintage, customizando prendas ya existentes y confeccionando a medida.
+                Todas las prendas son únicas y si no están en stock podes pedirnos que la confeccionemos para vos.
+            </p>
+        </article>
+    </section>
 
     <div class="carousel-container">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" class="carousel-index">
@@ -102,40 +101,40 @@
         </div>
     </div>
 
-        <section class=" sect-tarjetas">
-            <div class="tarjetas">
-                <img src="img/inicio/icons-tarjetas-inicio/intercambio.png" alt="" class="tarjetas__img">
-                <h3 class="tarjetas__titulo">GRATIS</h3>
-                <p class="tarjetas__texto">Tenes 10 días, una vez recibida tu compra para hacer cambios y devoluciones
-                    sin cargo.</p>
-            </div>
+    <section class=" sect-tarjetas">
+        <div class="tarjetas">
+            <img src="img/inicio/icons-tarjetas-inicio/intercambio.png" alt="" class="tarjetas__img">
+            <h3 class="tarjetas__titulo">GRATIS</h3>
+            <p class="tarjetas__texto">Tenes 10 días, una vez recibida tu compra para hacer cambios y devoluciones
+                sin cargo.</p>
+        </div>
 
-            <div class="tarjetas">
-                <img src="img/inicio/icons-tarjetas-inicio/tarjeta-de-credito.png" alt="" class="tarjetas__img">
-                <h3 class="tarjetas__titulo">MÉTODOS DE PAGO</h3>
-                <ul class="tarjetas__texto">
-                    <li>Mercado Pago</li>
-                    <li>Paypal</li>
-                    <li>RapiPago</li>
-                </ul>
-            </div>
+        <div class="tarjetas">
+            <img src="img/inicio/icons-tarjetas-inicio/tarjeta-de-credito.png" alt="" class="tarjetas__img">
+            <h3 class="tarjetas__titulo">MÉTODOS DE PAGO</h3>
+            <ul class="tarjetas__texto">
+                <li>Mercado Pago</li>
+                <li>Paypal</li>
+                <li>RapiPago</li>
+            </ul>
+        </div>
 
-            <div class="tarjetas">
-                <img src="img/inicio/icons-tarjetas-inicio/envio-al-mundo-entero.png" alt="" class="tarjetas__img">
-                <h3 class="tarjetas__titulo">ENVIOS A TODO EL PAÍS</h3>
-                <p class="tarjetas__texto">
-                    Despachamos en 2 días hábiles y podés seguir tu paquete con el mail que te enviamos una vez
-                    despachada la compra.
-                </p>
-            </div>
+        <div class="tarjetas">
+            <img src="img/inicio/icons-tarjetas-inicio/envio-al-mundo-entero.png" alt="" class="tarjetas__img">
+            <h3 class="tarjetas__titulo">ENVIOS A TODO EL PAÍS</h3>
+            <p class="tarjetas__texto">
+                Despachamos en 2 días hábiles y podés seguir tu paquete con el mail que te enviamos una vez
+                despachada la compra.
+            </p>
+        </div>
 
-            <div class="tarjetas">
-                <img src="img/inicio/icons-tarjetas-inicio/descuento.png" alt="" class="tarjetas__img">
-                <h3 class="tarjetas__titulo">NEWSLETTER</h3>
-                <p class="tarjetas__texto">
-                    ¡Inscribite y recibí todas las novedades, promociones y descuentos!!
-                </p>
-            </div>
+        <div class="tarjetas">
+            <img src="img/inicio/icons-tarjetas-inicio/descuento.png" alt="" class="tarjetas__img">
+            <h3 class="tarjetas__titulo">NEWSLETTER</h3>
+            <p class="tarjetas__texto">
+                ¡Inscribite y recibí todas las novedades, promociones y descuentos!!
+            </p>
+        </div>
     </section>
 
     </main>
