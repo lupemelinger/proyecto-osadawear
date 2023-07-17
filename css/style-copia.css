@@ -1033,9 +1033,6 @@ main form input {
 
     /* forms osada-a-medida y djs-by-osada */
     .formulario-a-medida {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
         margin: 3rem;
     }
 
@@ -1076,6 +1073,8 @@ main form input {
         width: 15vw;
     }
 }
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
