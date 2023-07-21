@@ -1,10 +1,10 @@
 // CAROUSEL 
 
 .carousel-container {
-    width: 100%;
+    width: 70%;
     background-color: rgba(148, 157, 69, 0.548);
-    padding: 10vw;
-    margin: 10px 5px;
+    padding: 3vw;
+    margin: 10px auto;
     position: relative;
 }
 
@@ -53,6 +53,11 @@
 // Tablet XL y desktop -------------
 
 @media screen and (min-width: 768px) {
+    .carousel-container {
+        width: 60%;
+        margin: 15px auto;
+    }
+    
     .article-index {
         display: flex;
         flex-direction: row;
@@ -111,6 +116,7 @@
         line-height: 1em;
         max-height: 2.5rem;
         width: 7rem;
+
     }
 
     &__texto {
@@ -122,6 +128,7 @@
         list-style: none;
         max-width: 30vw;
         list-style: none;
+        padding: 0.3rem;
     }
 }
 
