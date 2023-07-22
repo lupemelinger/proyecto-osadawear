@@ -16,6 +16,16 @@
 }
 
 // MOBILE ---------------
+.bg-form {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    opacity: 0.3;
+    width: 35vw;
+    margin: 40px;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -24,7 +34,7 @@
     justify-content: space-around;
     align-items: flex-start;
     padding: 1rem;
-    margin: 2rem;
+    padding-bottom: 3rem;
 
     &__label {
         font-family: $ff-roboto;
@@ -93,6 +103,7 @@
         font-size: 1vw;
         padding: 1rem;
     }
+
 }
 
 // DESKTOP --------------------

@@ -1,11 +1,11 @@
 // CAROUSEL 
 
-.carousel-container {
-    width: 70%;
+.carousel-container-index {
+    width: 50%;
     background-color: rgba(148, 157, 69, 0.548);
     padding: 3vw;
-    margin: 10px auto;
-    position: relative;
+    margin: 40px auto;
+    position: static;
 }
 
 .carousel-index {
@@ -22,7 +22,7 @@
     align-items: center;
     padding: 30px;
     margin: 10px;
-    position: relative;
+    position: static;
 
     &__img {
         width: 55vw;
@@ -50,6 +50,12 @@
     }
 }
 
+.index-icons {
+    justify-content: space-around;
+    img {
+        width: 45px;
+    }
+}
 // Tablet XL y desktop -------------
 
 @media screen and (min-width: 768px) {

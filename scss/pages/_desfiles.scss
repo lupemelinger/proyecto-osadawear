@@ -1,3 +1,20 @@
+
+// Carousel
+.conteiner-desfiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-desfiles {
+    width: 80%;
+    background-color: rgba(148, 157, 69, 0.548);
+    padding: 4vw;
+    margin: 40px auto;
+    position: static;
+    
+}
+
+// Texto desfiles
 .sect-desfiles {
     display: flex;
     flex-direction: column;
@@ -14,4 +31,27 @@
         margin:0.2rem
     }
 }
+
+@media screen and (min-width: 768px) {
+    .conteiner-desfiles {
+        flex-direction: row;
+    }
+
+    .carousel-desfiles {
+        margin: 20px;
+    }
+
+    .sect-desfiles {
+        &__titulo {
+            font-size: 2vw;
+        margin: 0.5rem;
+        }
+        &__info {
+            font-size: 1vw;
+            margin:0.3rem
+        }
+    }
+}
+
+
 

@@ -41,7 +41,7 @@ h2 {
   max-width: 100%;
   max-height: 30px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 768px) {
   h2 {
@@ -184,7 +184,8 @@ header li a:hover {
 }
 
 .footer {
-  background-color: rgba(148, 157, 69, 0.705);
+  background-image: url(../../img/inicio/footer/bg-footer-compr.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -441,7 +442,6 @@ footer nav a:hover {
 .stock__nombre {
   font-family: "Averia Serif Libre", cursive;
   font-size: 2.5vw;
-  text-transform: uppercase;
   margin: 0.5rem;
   text-align: center;
 }
@@ -455,15 +455,17 @@ footer nav a:hover {
   .stock__item {
     width: 27vw;
     margin: 2vw;
+    background-color: rgba(148, 157, 69, 0.589);
   }
   .stock__img {
     max-width: 100%;
   }
   .stock__nombre {
-    display: none;
+    font-size: 1.5vw;
+    background-color: white;
   }
   .stock__btn:hover {
-    color: rgba(148, 157, 69, 0.493);
+    opacity: 20%;
   }
 }
 .bloque-texto {
@@ -481,6 +483,16 @@ footer nav a:hover {
   padding: 1rem;
 }
 
+.bg-form {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 25%;
+  opacity: 0.3;
+  width: 35vw;
+  margin: 40px;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -489,7 +501,7 @@ footer nav a:hover {
   justify-content: space-around;
   align-items: flex-start;
   padding: 1rem;
-  margin: 2rem;
+  padding-bottom: 3rem;
 }
 .formulario__label {
   font-family: "Roboto", sans-serif;
@@ -555,12 +567,12 @@ footer nav a:hover {
     font-size: 1vw;
   }
 }
-.carousel-container {
-  width: 70%;
+.carousel-container-index {
+  width: 50%;
   background-color: rgba(148, 157, 69, 0.548);
   padding: 3vw;
-  margin: 10px auto;
-  position: relative;
+  margin: 40px auto;
+  position: static;
 }
 
 .carousel-index {
@@ -575,7 +587,7 @@ footer nav a:hover {
   align-items: center;
   padding: 30px;
   margin: 10px;
-  position: relative;
+  position: static;
 }
 .article-index__img {
   width: 55vw;
@@ -597,6 +609,13 @@ footer nav a:hover {
   text-align: center;
   max-width: 70vw;
   padding: 1rem;
+}
+
+.index-icons {
+  justify-content: space-around;
+}
+.index-icons img {
+  width: 45px;
 }
 
 @media screen and (min-width: 768px) {
@@ -687,6 +706,19 @@ footer nav a:hover {
     max-width: 15vw;
   }
 }
+.conteiner-desfiles {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-desfiles {
+  width: 80%;
+  background-color: rgba(148, 157, 69, 0.548);
+  padding: 4vw;
+  margin: 40px auto;
+  position: static;
+}
+
 .sect-desfiles {
   display: flex;
   flex-direction: column;
@@ -700,6 +732,67 @@ footer nav a:hover {
 .sect-desfiles__info {
   font-size: 2vw;
   margin: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner-desfiles {
+    flex-direction: row;
+  }
+  .carousel-desfiles {
+    margin: 20px;
+  }
+  .sect-desfiles__titulo {
+    font-size: 2vw;
+    margin: 0.5rem;
+  }
+  .sect-desfiles__info {
+    font-size: 1vw;
+    margin: 0.3rem;
+  }
+}
+.icons-lenceria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icons-lenceria img {
+  width: 9vw;
+  margin: 1rem;
+  opacity: 0.5;
+}
+
+.lenceria-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lenceria-info__titulo {
+  font-size: 1.8rem;
+}
+.lenceria-info__texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+  line-height: 20px;
+  text-align: center;
+  max-width: 70vw;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .icons-lenceria {
+    justify-content: center;
+  }
+  .icons-lenceria img {
+    width: 5vw;
+  }
+  .lenceria-info__titulo {
+    font-size: 2.7rem;
+  }
+  .lenceria-info__texto {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
