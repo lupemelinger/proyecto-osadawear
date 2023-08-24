@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creamos prendas exclusivas utilizando telas vintage, customizando prendas ya existentes y confeccionando a medida.">
+    <meta name="description"
+        content="Creamos prendas exclusivas utilizando telas vintage, customizando prendas ya existentes y confeccionando a medida.">
     <title> Osada Wear | Nuestra tienda online con todo el stock disponible! </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet"
-        type="text/css/"">
+        type="text/css/">
     <link href=" https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" type="text/css/">
     <script src="https://kit.fontawesome.com/c4ac9449c7.js" crossorigin="anonymous"></script>
+
+    <script src="../carrito.js"></script>
 </head>
 
 <body>
@@ -55,89 +59,163 @@
 
         <section class="stock">
 
+            <!-- BUZO ANORAK -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/buzo-mangas.jpg" alt="Buzo Anorak" class="stock__img">
-                    <p class="stock__nombre">Buzo Anorak</p>
-                </a>
+                <img src="../img/stock/buzo-mangas.jpg" alt="Buzo Anorak" class="stock__img">
+                <p class="stock__nombre">Buzo Anorak</p>
+                <script type="text/javascript"> document.write(displayStock(4))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadBuzoAnorak)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- BLAZER REWORK -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/blazer-rework.jpg" alt="Blazer Rework" class="stock__img">
-                    <p class="stock__nombre">Blazer Rework</p>
-                </a>
+                <img src="../img/stock/blazer-rework.jpg" alt="Blazer Rework" class="stock__img">
+                <p class="stock__nombre">Blazer Rework</p>
+                <script type="text/javascript"> document.write(displayStock(2))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadBlazer)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- CAMPERA FLOWERS -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/campera-flowers.jpg" alt="Campera Flowers" class="stock__img">
-                    <p class="stock__nombre">Campera Flowers</p>
-
-                </a>
+                <img src="../img/stock/campera-flowers.jpg" alt="Campera Flowers" class="stock__img">
+                <p class="stock__nombre">Campera Flowers</p>
+                <script type="text/javascript"> document.write(displayStock(6))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadCampera)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- MANGAS BLACK -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/mangas-black.jpg" alt="" class="stock__img">
-                    <p class="stock__nombre">Mangas Black</p>
-                </a>
+                <img src="../img/stock/mangas-black.jpg" alt="" class="stock__img">
+                <p class="stock__nombre">Mangas Black</p>
+                <script type="text/javascript"> document.write(displayStock(0))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadMangasB)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- MANGAS CANDY -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/mangas-candy.jpg" alt="" class="stock__img">
-                    <p class="stock__nombre">Mangas Candy</p>
+                <img src="../img/stock/mangas-candy.jpg" alt="" class="stock__img">
+                <p class="stock__nombre">Mangas Candy</p>
                 </a>
+                <script type="text/javascript"> document.write(displayStock(3))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadMangasC)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- POLERA CREMA -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/polera- crema.jpg" alt="Polera Crema" class="stock__img">
-                    <p class="stock__nombre">Polera Crema</p>
-                </a>
+                <img src="../img/stock/polera- crema.jpg" alt="Polera Crema" class="stock__img">
+                <p class="stock__nombre">Polera Crema</p>
+                <script type="text/javascript"> document.write(displayStock(0))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadPoleraCrema)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- BUZO FLOWW -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/buzo-flow.jpg" alt="Buzo Flowers" class="stock__img">
-                    <p class="stock__nombre">Buzo Floww</p>
-                </a>
+                <img src="../img/stock/buzo-flow.jpg" alt="Buzo Flowers" class="stock__img">
+                <p class="stock__nombre">Buzo Floww</p>
+                <script type="text/javascript"> document.write(displayStock(1))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadBuzoF)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- POLERA PIEL -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/polera-piel.jpg" alt="Polera Piel" class="stock__img">
-                    <p class="stock__nombre">Polera Skin</p>
-                </a>
+                <img src="../img/stock/polera-piel.jpg" alt="Polera Piel" class="stock__img">
+                <p class="stock__nombre">Polera Skin</p>
+                <script type="text/javascript"> document.write(displayStock(3))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadPoleraPiel)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+<!-- REME MANZANA -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/reme-manzana.jpg" alt="Reme Manzana" class="stock__img">
-                    <p class="stock__nombre">Reme Manzana</p>
-                </a>
+                <img src="../img/stock/reme-manzana.jpg" alt="Reme Manzana" class="stock__img">
+                <p class="stock__nombre">Reme Manzana</p>
+                <script type="text/javascript"> document.write(displayStock(0))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadRemeM)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
+
             </div>
 
+            <!-- Reme Work Patch -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/reme-patch.jpg" alt="Reme Patch" class="stock__img">
-                    <p class="stock__nombre"> Remera Work Patch</p>
-                </a>
+                <img src="../img/stock/reme-patch.jpg" alt="Reme Patch" class="stock__img">
+                <p class="stock__nombre"> Remera Work Patch</p>
+                <script type="text/javascript"> document.write(displayStock(0))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadRemeWP)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
+
             </div>
 
+<!-- top patch -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/top-patch.jpg" alt="Top Patch" class="stock__img">
-                    <p class="stock__nombre"> Top Work Patch</p>
-                </a>
+                <img src="../img/stock/top-patch.jpg" alt="Top Patch" class="stock__img">
+                <p class="stock__nombre"> Top Work Patch</p>
+                <script type="text/javascript"> document.write(displayStock(0))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadTopP)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
+            <!-- BUZO BATIK -->
             <div class="stock__item">
-                <a href="" class="stock__btn">
-                    <img src="../img/stock/buzo-batik.jpg" alt="Buzo Batik" class="stock__img">
-                    <p class="stock__nombre">Buzo Batik</p>
-                </a>
+                <img src="../img/stock/buzo-batik.jpg" alt="Buzo Batik" class="stock__img">
+                <p class="stock__nombre">Buzo Batik</p>
+                <script type="text/javascript"> document.write(displayStock(0))</script>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-primary" onclick="removeProduct()">-</button>
+                    <script type="text/javascript"> document.write(cantidadBuzoB)</script>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">+</button>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+                </div>
             </div>
 
         </section>
@@ -198,7 +276,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
         </script>
-
 </body>
 
 </html>
